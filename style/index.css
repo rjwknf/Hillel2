@@ -1,0 +1,116 @@
+
+.container {
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* header */
+
+.header {
+    background-color: rgb(255, 127, 80) ;
+    width: 100vw;
+    height: auto;
+}
+
+.header-tittle {
+    color: aliceblue;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.header-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* header */
+/* aside */
+
+.aside {
+    background-color: #333333;
+    width: 100vw;
+    height: auto;
+}
+
+.menu-list {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+
+/* aside */
+/* main */
+
+.main {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.background {
+    width: 100vw;
+    height: 40vh;
+    background-color: #702663;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 115px;
+}
+
+.flex-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.left-block {
+    width: 65%;
+    height: auto;
+}
+
+.left-text {
+    padding-top: 20px;
+}
+
+.welcome {
+    color: #333333;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.right-block {
+    width: 350px;
+    height: auto;
+    background-color: #333333;
+    padding: 25px 15px 25px 15px;
+}
+
+.right-text {
+    color: aliceblue;
+}
+
+.footer {
+    background-color: #333333;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-text {
+    color: aliceblue;
+}
+
+/* main */
