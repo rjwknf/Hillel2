@@ -48,16 +48,10 @@ a {
 }
 
 /* aside */
-/* main */
 
-.main {
-    width: 100vw;
-    height: auto;
-    padding-bottom: 100px;
-}
-
-.background {
-    width: 100vw;
+/* section */
+.section {
+    width: 100%;
     height: 40vh;
     background-color: #702663;
 }
@@ -69,38 +63,66 @@ h1 {
     font-weight: 700;
     padding-top: 115px;
 }
+/* section */
 
-.flex-block {
+/* main */
+
+.wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.left-block {
-    width: 65%;
+.main {
+    width: 100%;
     height: auto;
-}
-
-.left-text {
-    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .welcome {
+    font-size: 22px;
+    font-weight: 600;
     color: #333333;
-    font-size: 26px;
-    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-.right-block {
-    width: 350px;
+.main-tittle {
     height: auto;
-    background-color: #333333;
-    padding: 25px 15px 25px 15px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
 }
 
-.right-text {
-    color: aliceblue;
+.main-text {
+    width: 880px;
 }
+
+.text {
+    line-height: 25px
+}
+
+/* main */
+/* sidebar */
+
+.sidebar {
+  width: 520px;  
+  height: 195px;
+  background-color: #333333;
+  position: relative;
+}
+
+.sidebar-text {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+/* sidebar */
 
 .footer {
     background-color: #333333;
@@ -113,4 +135,50 @@ h1 {
     color: aliceblue;
 }
 
-/* main */
+
+@media(max-width: 1320px) {
+    .wrapper{
+        width: 100%;
+        display: block;
+        margin-left: 200px;
+        padding-bottom: 50px; 
+        
+    }
+    
+    .main-text{
+        width: 50%;
+        height: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 720px; 
+    }
+
+    .sidebar {
+        width: 60%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .section {
+        width: 100%;
+    }
+
+    h1 {
+        width: 600px;
+    }
+
+    .wrapper{
+        width: 100%;
+        display: block;
+        margin-left: 125px;
+        padding-bottom: 50px; 
+        
+    }
+
+}
